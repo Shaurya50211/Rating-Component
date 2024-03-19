@@ -24,25 +24,41 @@
       color: hsl(228, 45%, 44%);
     }
   </style>
+   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 </head>
 
 <body>
-  <main>
-    <img src="images/icon-star.svg" alt="star">
+  <main class="main1">
+    <img src="images/icon-star.svg" class="star" alt="star">
 
     <h1>How did we do?</h1>
     <p>Please let us know how we did with your support request. All feedback is appreciated
       to help us improve our offering!</p>
 
     <div class="rating-buttons">
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>4</button>
-      <button>5</button>
+      <button class="ratingButton rate1">1</button>
+      <button class="ratingButton rate2">2</button>
+      <button class="ratingButton rate3">3</button>
+      <button class="ratingButton rate4">4</button>
+      <button class="ratingButton rate5">5</button>
     </div>
 
-    <button class="submit">Submit</button>
+    <button class="submit" onclick="submitClicked()">Submit</button>
+  </main>
+
+
+
+  <main class="main2">
+    <img src="images/illustration-thank-you.svg" alt="thankyou">
+
+    <dir class="info">
+      <p>You selected</p>
+      <P id="selection"></P>
+      <P>out of 5</P>
+    </dir>
+
+    <h1>Thank You!</h1>
+    <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
   </main>
 
   <!-- Thank you state start -->

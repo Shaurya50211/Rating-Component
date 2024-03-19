@@ -27,9 +27,20 @@ p {
     height: 40px;
     border-radius: 50px;
     color: hsl(216, 12%, 54%);
-    background-color: hsl(213, 19%, 18%);
+    background-color: #2e353f;
     border: none;
 
+}
+
+.rating-buttons > *:hover {
+    cursor: pointer;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+.clicked {
+    background-color: hsl(217, 12%, 63%);
+    color: white;
 }
 
 .rating-buttons {
@@ -46,14 +57,45 @@ p {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
 
+.submit:hover {
+    cursor: pointer;
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+.main2 {
+    align-items: center;
+    text-align: center;
+}
+
+.main2 .info p {
+    display: inline;
+    color: hsl(25, 97%, 53%);
+    font-weight: 300;
+}
+
+.main2 .info {
+    background-color: #2e353f;
+    padding: 5px 20px;
+    border-radius: 40px;
 }
 
 main {
     background-color:  hsl(213, 19%, 18%);
-    width: calc(350px - 20px);
-    height: calc(375px - 20px);
-    margin-top: calc((100vh - 85vw)/2);
+    width: 330px;
+    height: 355px;
+    margin-top: 200px;
+    margin-top: calc((100vh - 355px)/2);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -61,9 +103,9 @@ main {
     padding: 20px 20px;
 }
 
-img {
+.star {
     width: 15px;
-    background-color: hsla(213, 19%, 18%, 0.9);
+    background-color: #2e353f;
     border-radius: 30px;
     padding: 12px;
 }
